@@ -1,0 +1,1 @@
+paddy disease, name Bacterial Leaf Blight, crop Paddy (Rice), primary symptoms Yellowing and drying from leaf tip downwards, causal organism Xanthomonas oryzae pv. oryzae, favourable conditions High humidity and warm temperature, transmission Water splash and contaminated seeds, stage affected Seedling to maturity, control Resistant varieties and seed treatment
