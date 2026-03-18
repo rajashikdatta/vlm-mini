@@ -1,78 +1,55 @@
-# 🌾 PaddyVLM — Workshop Repository
+# VLM Mini Workshop (Beginner Friendly)
 
-This repository contains the **expert knowledge resources** for the PaddyVLM workshop.  
-Participants do **not** need to clone this repo manually — the Colab notebook does it automatically.
+This repository contains a simple notebook for teaching the core idea of Vision-Language Models (VLMs) in about 1 hour.
 
----
+The notebook uses a small public Kaggle dataset and two easy demos:
+1. Image captioning (image -> text)
+2. Visual question answering (image + question -> answer)
 
-## What's inside
+## Files
 
-```
-other_resources/
-├── attributes/
-│   └── paddy_disease/          # Compact attribute descriptions per class
-│       ├── bacterial_leaf_blight.txt
-│       ├── bacterial_leaf_streak.txt
-│       ├── bacterial_panicle_blight.txt
-│       ├── blast.txt
-│       ├── brown_spot.txt
-│       ├── dead_heart.txt
-│       ├── downy_mildew.txt
-│       ├── hispa.txt
-│       ├── normal.txt
-│       └── tungro.txt
-└── External_Knowledge/
-    └── paddy_disease/          # Detailed disease/pest knowledge per class
-        └── (same 10 .txt files)
-```
+- paddy_vlm_workshop.ipynb: Main workshop notebook
+- other_resources/: Legacy files from earlier project version (not required for this mini workshop)
 
----
+## Open in Colab
 
-## How to run the workshop
+Open the notebook directly from your GitHub repository:
 
-1. Open the notebook in Google Colab:  
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rajashikdatta/paddy-vlm/blob/main/paddy_vlm_workshop.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rajashikdatta/vlm-mini/blob/main/paddy_vlm_workshop.ipynb)
 
-2. Set your **Colab Secrets** (click the 🔑 key icon in the left sidebar):
+## Workshop setup (for students)
 
-   | Secret Name | Where to get it |
-   |---|---|
-   | `KAGGLE_USERNAME` | [kaggle.com](https://www.kaggle.com) → Account → API |
-   | `KAGGLE_KEY` | Same Kaggle API token page |
-   | `HF_TOKEN` | [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens) |
+1. Open notebook in Google Colab.
+2. Set runtime to GPU:
+   Runtime -> Change runtime type -> T4 GPU
+3. Add Colab secrets from the key icon:
+   - KAGGLE_USERNAME
+   - KAGGLE_KEY
+4. Run all cells from top to bottom.
 
-3. Change runtime to **T4 GPU**: `Runtime → Change runtime type → T4 GPU`
+Kaggle API keys are available at:
+https://www.kaggle.com/settings/account
 
-4. Run cells **top to bottom** — no uploads, no manual steps.
+## Dataset used
 
----
+- Kaggle dataset: https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
+- Notebook behavior: downloads dataset and samples a tiny subset for fast execution
 
-## Dataset
+## Suggested 60-minute teaching flow
 
-The notebook automatically downloads the  
-[Paddy Disease Classification Dataset](https://www.kaggle.com/competitions/paddy-disease-classification/data) from Kaggle.
+1. 0-10 min: What is a VLM, and where image + text models are used.
+2. 10-20 min: Colab setup and Kaggle secrets.
+3. 20-35 min: Run captioning demo and discuss outputs.
+4. 35-50 min: Run image Q&A demo and compare model answers.
+5. 50-60 min: Student mini activity and wrap-up.
 
----
+## Notes for instructors
 
-## Classes covered (10 total)
+- This is a concept-first workshop notebook, not a training pipeline.
+- No model fine-tuning is required.
+- Keep discussion centered on strengths, limitations, and bias in model outputs.
 
-| Class | Type |
-|---|---|
-| blast | Disease |
-| brown_spot | Disease |
-| bacterial_leaf_blight | Disease |
-| bacterial_leaf_streak | Disease |
-| bacterial_panicle_blight | Disease |
-| dead_heart | Pest |
-| downy_mildew | Disease |
-| hispa | Pest |
-| tungro | Disease |
-| normal | Healthy |
+## License and model references
 
----
-
-## References
-
-- [LLaVA Official Repository](https://github.com/haotian-liu/LLaVA)
-- [Kaggle Dataset](https://www.kaggle.com/competitions/paddy-disease-classification/data)
-- [HuggingFace](https://huggingface.co)
+- BLIP caption model: Salesforce/blip-image-captioning-base
+- BLIP VQA model: Salesforce/blip-vqa-base
