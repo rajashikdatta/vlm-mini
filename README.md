@@ -8,27 +8,26 @@ The notebook uses a small public Kaggle dataset and two easy demos:
 
 ## Files
 
-- paddy_vlm_workshop.ipynb: Main workshop notebook
+- vlm_mini.ipynb: Main workshop notebook
 - other_resources/: Legacy files from earlier project version (not required for this mini workshop)
 
-## Open in Colab
+## How to run the workshop
 
-Open the notebook directly from your GitHub repository:
+Open the notebook in Google Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rajashikdatta/vlm-mini/blob/main/paddy_vlm_workshop.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rajashikdatta/vlm-mini/blob/main/vlm_mini.ipynb)
 
-## Workshop setup (for students)
+Set your Colab Secrets (click the key icon in the left sidebar):
 
-1. Open notebook in Google Colab.
-2. Set runtime to GPU:
-   Runtime -> Change runtime type -> T4 GPU
-3. Add Colab secrets from the key icon:
-   - KAGGLE_USERNAME
-   - KAGGLE_KEY
-4. Run all cells from top to bottom.
+| Secret Name | Where to get it |
+|---|---|
+| KAGGLE_USERNAME | kaggle.com -> Account -> API |
+| KAGGLE_KEY | Same Kaggle API token page |
+| HF_TOKEN | huggingface.co/settings/tokens |
 
-Kaggle API keys are available at:
-https://www.kaggle.com/settings/account
+Change runtime to T4 GPU: Runtime -> Change runtime type -> T4 GPU
+
+Run cells top to bottom - no uploads, no manual steps.
 
 ## Dataset used
 
