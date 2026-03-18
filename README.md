@@ -21,9 +21,9 @@ Set your Colab Secrets (click the key icon in the left sidebar):
 
 | Secret Name | Where to get it |
 |---|---|
-| KAGGLE_USERNAME | kaggle.com -> Account -> API |
+| KAGGLE_USERNAME | [kaggle.com](https://www.kaggle.com) -> Account -> API |
 | KAGGLE_KEY | Same Kaggle API token page |
-| HF_TOKEN | huggingface.co/settings/tokens |
+| HF_TOKEN | [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens) |
 
 Change runtime to T4 GPU: Runtime -> Change runtime type -> T4 GPU
 
